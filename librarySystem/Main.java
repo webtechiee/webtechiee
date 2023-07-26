@@ -1,23 +1,20 @@
 package librarySystem;
 
 public class Main {
+    public static void main(String[] args) {
+        Book book1 = new Book("Sample Book", "John Doe", 2023);
+        Magazine magazine1 = new Magazine("Tech Magazine", "Tech Publications", 2023, "July Issue", 25);
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-	Book fictionBook = new FictionBook("The Secret Garden","Frances Hodgson Burnett",1911,"Fantasy");
-	Book nonfictionBook = new NonFictionBook("Sapiens:A Brief Of HumanKind","Yuval Noah Harari",2014,"History");
-	Book referenceBook = new ReferenceBook("The Complete Reference","Herbert Schildt",2019,"English");
-		
-		
-		
-		System.out.println("DETAILS OF THE FICTION BOOK:" );
-		fictionBook.displayDetails();
-		
-		System.out.println("\nDETAILS OF THE NON-FICTION BOOK:");
-		nonfictionBook.displayDetails();
-		
-		System.out.println("\nDETAILS OF THE REFERENCE BOOK BOOK:");
-		referenceBook.displayDetails();
-	}
+        System.out.println("Book details:");
+        book1.displayDetails();
 
+        System.out.println("\nMagazine details:");
+        magazine1.displayDetails();
+    }
 }
+
+
+
+
+
+
